@@ -13,7 +13,7 @@ import io.grpc.{ManagedChannel, ManagedChannelBuilder, StatusRuntimeException}
   */
 object CustomerPlanClient {
   def apply(host: String, port: Int): CustomerPlanClient = {
-    val channel = ManagedChannelBuilder.forAddress(host, port).usePlaintext(true).build
+    val channel = ManagedChannelBuilder.forTarget( s"$host:$port" ).usePlaintext(true).build
     val blockingStub = CustomerPlanGrpc.blockingStub(channel)
     new CustomerPlanClient(channel, blockingStub)
   }

@@ -13,3 +13,12 @@ clean
 compile
 dcoekr 
 docker 
+compile
+reload 
+compile
+run
+reload 
+update
+compile
+run
+assembly

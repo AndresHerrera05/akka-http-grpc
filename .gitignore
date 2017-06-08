@@ -1,0 +1,12 @@
+customer/target/*
+customer/project/target/*
+customer/.idea/*
+customer/project/project/target/*
+
+customer-plan/.idea/*
+customer-plan/project/project/target/*
+customer-plan/project/target/*
+customer-plan/target/*
+
+
+

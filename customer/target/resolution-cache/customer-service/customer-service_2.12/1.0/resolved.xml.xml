@@ -4,7 +4,7 @@
 		module="customer-service_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170607160627"
+		publication="20170608161750"
 	>
 		<description>
 		customer-service
@@ -44,8 +44,8 @@
 		<dependency org="io.circe" name="circe-parser_2.12" rev="0.7.1" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" conf="compile->default(compile)"/>
 		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.3" conf="compile->default(compile)"/>
-		<dependency org="io.grpc" name="grpc-netty" rev="1.2.0" conf="compile->default(compile)"/>
 		<dependency org="com.trueaccord.scalapb" name="scalapb-runtime-grpc_2.12" rev="0.6.0-pre4" conf="compile->default(compile)"/>
 		<dependency org="io.grpc" name="grpc-okhttp" rev="1.2.0" conf="compile->default(compile)"/>
+		<dependency org="io.grpc" name="grpc-netty" rev="1.2.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

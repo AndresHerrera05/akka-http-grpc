@@ -4,7 +4,7 @@
 		module="customer-plan$sources_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170607162010"
+		publication="20170608161817"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
