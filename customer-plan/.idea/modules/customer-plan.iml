@@ -18,10 +18,18 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../target/scala-2.12/resource_managed/test" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/../../target" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/docker" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/protobuf_external" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/resolution-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target/streams" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.12.2:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.grpc:grpc-okhttp:1.2.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.grpc:grpc-core:1.2.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: io.grpc:grpc-context:1.2.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.google.errorprone:error_prone_annotations:2.0.11:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty-transport:4.1.8.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty-resolver:4.1.8.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: io.netty:netty-handler-proxy:4.1.8.Final:jar" level="project" />
@@ -34,8 +42,6 @@
     <orderEntry type="library" name="SBT: io.netty:netty-buffer:4.1.8.Final:jar" level="project" />
     <orderEntry type="library" name="SBT: io.grpc:grpc-stub:1.2.0:jar" level="project" />
     <orderEntry type="library" name="SBT: io.grpc:grpc-netty:1.2.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: io.grpc:grpc-core:1.2.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: io.grpc:grpc-context:1.2.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.trueaccord.scalapb:scalapb-runtime_2.12:0.6.0-pre4:jar" level="project" />
     <orderEntry type="library" name="SBT: com.trueaccord.scalapb:scalapb-runtime-grpc_2.12:0.6.0-pre4:jar" level="project" />
     <orderEntry type="library" name="SBT: com.trueaccord.lenses:lenses_2.12:0.4.11:jar" level="project" />
@@ -45,7 +51,8 @@
     <orderEntry type="library" name="SBT: com.google.protobuf:protobuf-java:3.2.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.google.instrumentation:instrumentation-api:0.3.0:jar" level="project" />
     <orderEntry type="library" name="SBT: com.google.guava:guava:19.0:jar" level="project" />
-    <orderEntry type="library" name="SBT: com.google.errorprone:error_prone_annotations:2.0.11:jar" level="project" />
     <orderEntry type="library" name="SBT: com.google.code.findbugs:jsr305:3.0.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.squareup.okhttp:okhttp:2.5.0:jar" level="project" />
+    <orderEntry type="library" name="SBT: com.squareup.okio:okio:1.6.0:jar" level="project" />
   </component>
 </module>

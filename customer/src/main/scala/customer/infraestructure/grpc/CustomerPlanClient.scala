@@ -19,7 +19,7 @@ object CustomerPlanClient {
   }
 
   def associatePlan( customer: Customer ): Unit ={
-    val cusPlan = CustomerPlanClient("localhost", 50051)
+    val cusPlan = CustomerPlanClient("0.0.0.0", 50051)
     try {
       val plan = if (customer.age <= 20) "Plan_1"
       else if (customer.age > 20 && customer.age <= 40) "Plan_2"

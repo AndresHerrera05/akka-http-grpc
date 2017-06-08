@@ -4,7 +4,7 @@
 		module="customer-plan_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170605134821"
+		publication="20170607161814"
 	>
 		<description>
 		customer-plan
@@ -38,5 +38,6 @@
 		<dependency org="com.trueaccord.scalapb" name="scalapb-runtime_2.12" rev="0.6.0-pre4" conf="compile->default(compile)"/>
 		<dependency org="io.grpc" name="grpc-netty" rev="1.2.0" conf="compile->default(compile)"/>
 		<dependency org="com.trueaccord.scalapb" name="scalapb-runtime-grpc_2.12" rev="0.6.0-pre4" conf="compile->default(compile)"/>
+		<dependency org="io.grpc" name="grpc-okhttp" rev="1.2.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

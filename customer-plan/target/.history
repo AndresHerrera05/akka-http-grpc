@@ -1,2 +1,15 @@
 compile
 run
+docker 
+reload
+update
+docker
+reload
+update
+reload 
+compile
+docker 
+clean
+compile
+dcoekr 
+docker 

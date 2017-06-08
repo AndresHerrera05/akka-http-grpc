@@ -24,6 +24,8 @@ object CustomerServer {
     implicit val materializer = ActorMaterializer()
 
     val server = new CustomerServer()
-    server.startServer("localhost", 8080)
+    println( "Starting server ..." )
+    server.startServer("0.0.0.0", 8080)
+    println( "Server started!" )
   }
 }

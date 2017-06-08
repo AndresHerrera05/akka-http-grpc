@@ -13,3 +13,26 @@ reload
 update
 compile
 run
+assembly
+reload
+docker 
+assembly
+last *:assembly 
+reload
+update
+assembly
+docker 
+reload
+update
+docker 
+assembly
+docker 
+reload
+dockr 
+docker 
+rteload
+reload 
+update
+reload 
+docker 
+docker

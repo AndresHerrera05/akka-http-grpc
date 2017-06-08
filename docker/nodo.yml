@@ -1,13 +1,21 @@
 customer:
-  image: java:8
+  image: customer-service/customer-service
   ports:
     - "8080:8080"
-  volumes:
-    - /home/kamus/Documents/proyectos/pruebas/akka-http-grpc/customer:/opt/docker
   environment:
     TZ: "America/Bogota"
     LANG: "C.UTF-8"
     JAVA_OPTS: "-Xms128M -Xmx512m"
-  command: "/sbin/my_init -- /opt/docker/bin/customer"
   hostname: customer
+  restart: always
+
+customer-plan:
+  image: default/customer-plan
+  ports:
+    - "50051:50051" 
+  environment:
+    TZ: "America/Bogota"
+    LANG: "C.UTF-8"
+    JAVA_OPTS: "-Xms128M -Xmx512m"
+  hostname: customer-plan
   restart: always

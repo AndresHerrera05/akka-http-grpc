@@ -1986,6 +1986,61 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->com.trueaccord.scalapb#scalapb-runtime-grpc_2.12;0.6.0-pre4 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving io.grpc#grpc-okhttp;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.grpc#grpc-okhttp;1.2.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving io.grpc#grpc-okhttp;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: io.grpc#grpc-okhttp;1.2.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/kamus/.ivy2/local/io.grpc/grpc-okhttp/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for io.grpc#grpc-okhttp;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for io.grpc#grpc-okhttp;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.grpc#grpc-okhttp;1.2.0!grpc-okhttp.pom(pom.original) (518ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/kamus/.ivy2/local/io.grpc/grpc-okhttp/1.2.0/jars/grpc-okhttp.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found io.grpc#grpc-okhttp;1.2.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.squareup.okhttp#okhttp;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.squareup.okhttp#okhttp;2.5.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.squareup.okhttp#okhttp;2.5.0[0m
+[0m[[0mdebug[0m] [0m	found com.squareup.okhttp#okhttp;2.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.squareup.okio#okio;1.6.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.squareup.okio#okio;1.6.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.squareup.okio#okio;1.6.0[0m
+[0m[[0mdebug[0m] [0m	found com.squareup.okio#okio;1.6.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [compile][0m
@@ -3800,6 +3855,38 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->com.trueaccord.scalapb#scalapb-runtime-grpc_2.12;0.6.0-pre4 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [runtime][0m
@@ -5735,6 +5822,44 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->com.trueaccord.scalapb#scalapb-runtime-grpc_2.12;0.6.0-pre4 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
@@ -7795,6 +7920,50 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->com.trueaccord.scalapb#scalapb-runtime-grpc_2.12;0.6.0-pre4 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -9852,6 +10021,50 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->com.trueaccord.scalapb#scalapb-runtime-grpc_2.12;0.6.0-pre4 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [test-internal][0m
@@ -12149,6 +12362,62 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->com.trueaccord.scalapb#scalapb-runtime-grpc_2.12;0.6.0-pre4 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.2 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.2 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->io.grpc#grpc-core;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okhttp#okhttp;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.squareup.okhttp#okhttp;2.5.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.grpc#grpc-okhttp;1.2.0->com.squareup.okio#okio;1.6.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies customer-service#customer-service_2.12;1.0->io.grpc#grpc-okhttp;1.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for customer-service#customer-service_2.12;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
@@ -12313,6 +12582,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.grpc#grpc-netty;1.2.0!grpc-netty.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.trueaccord.scalapb#scalapb-runtime-grpc_2.12;0.6.0-pre4!scalapb-runtime-grpc_2.12.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/grpc/grpc-okhttp/1.2.0/grpc-okhttp-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.grpc#grpc-okhttp;1.2.0!grpc-okhttp.jar (908ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.trueaccord.lenses#lenses_2.12;0.4.11!lenses_2.12.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.lihaoyi#fastparse_2.12;0.4.2!fastparse_2.12.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;3.2.0!protobuf-java.jar(bundle)[0m
@@ -12361,10 +12636,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty-common;4.1.8.Final!netty-common.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty-codec-socks;4.1.8.Final!netty-codec-socks.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.grpc#grpc-stub;1.2.0!grpc-stub.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.squareup.okhttp#okhttp;2.5.0!okhttp.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.squareup.okio#okio;1.6.0!okio.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 559ms :: artifacts dl 10ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7124ms :: artifacts dl 927ms[0m
 [0m[[0mdebug[0m] [0m	report for customer-service#customer-service_2.12;1.0 compile produced in /home/kamus/Documents/proyectos/pruebas/akka-http-grpc/customer/target/resolution-cache/reports/customer-service-customer-service_2.12-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for customer-service#customer-service_2.12;1.0 runtime produced in /home/kamus/Documents/proyectos/pruebas/akka-http-grpc/customer/target/resolution-cache/reports/customer-service-customer-service_2.12-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for customer-service#customer-service_2.12;1.0 test produced in /home/kamus/Documents/proyectos/pruebas/akka-http-grpc/customer/target/resolution-cache/reports/customer-service-customer-service_2.12-test.xml[0m
@@ -12379,5 +12656,5 @@
 [0m[[0mdebug[0m] [0m	report for customer-service#customer-service_2.12;1.0 docs produced in /home/kamus/Documents/proyectos/pruebas/akka-http-grpc/customer/target/resolution-cache/reports/customer-service-customer-service_2.12-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for customer-service#customer-service_2.12;1.0 pom produced in /home/kamus/Documents/proyectos/pruebas/akka-http-grpc/customer/target/resolution-cache/reports/customer-service-customer-service_2.12-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for customer-service#customer-service_2.12;1.0 scala-tool produced in /home/kamus/Documents/proyectos/pruebas/akka-http-grpc/customer/target/resolution-cache/reports/customer-service-customer-service_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (559ms resolve - 10ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (7124ms resolve - 927ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

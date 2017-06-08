@@ -19,7 +19,8 @@ libraryDependencies ++= {
     "org.scalatest"     %  "scalatest_2.12"    % "3.0.1",
     "ch.qos.logback"    % "logback-classic"    % "1.2.3",
     "io.grpc"                %  "grpc-netty"           % com.trueaccord.scalapb.compiler.Version.grpcJavaVersion,
-    "com.trueaccord.scalapb" %% "scalapb-runtime-grpc" % com.trueaccord.scalapb.compiler.Version.scalapbVersion
+    "com.trueaccord.scalapb" %% "scalapb-runtime-grpc" % com.trueaccord.scalapb.compiler.Version.scalapbVersion,
+    "io.grpc"                % "grpc-okhttp"           % com.trueaccord.scalapb.compiler.Version.grpcJavaVersion
   )
 
 }
@@ -27,3 +28,25 @@ libraryDependencies ++= {
 PB.targets in Compile := Seq(
   scalapb.gen() -> (sourceManaged in Compile).value
 )
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case "reference.conf" => MergeStrategy.concat
+  case x => MergeStrategy.first
+}
+
+enablePlugins(DockerPlugin)
+
+dockerfile in docker := {
+  // The assembly task generates a fat JAR file
+  val artifact: File = assembly.value
+  val artifactTargetPath = s"/app/${artifact.name}"
+
+  new Dockerfile {
+    from("java")
+    add(artifact, artifactTargetPath)
+    entryPoint("java", "-jar", artifactTargetPath)
+  }
+}
+
+buildOptions in docker := BuildOptions(cache = false)
