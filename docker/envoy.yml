@@ -3,11 +3,28 @@ customer:
   ports:
     - "8080:8080"
   volumes:
-    - ./envoy-customer-client.json:/etc/envoy-customer-client.json
+    - ./envoy-customer-client.json:/etc/envoy-configuration.json
+    - ./init-client.sh:/app/init.sh
+  command: ["/app/init.sh"]
   environment:
     TZ: "America/Bogota"
     LANG: "C.UTF-8"
     JAVA_OPTS: "-Xms128M -Xmx512m"
-  command: ["mkdir /var/log/envoy/", "/usr/local/bin/envoy -c /etc/envoy-customer-client.json"]
   hostname: customer
+  restart: always
+
+
+customer-plan:
+  image: default/customer-plan
+  ports:
+    - "50052:50052"
+  volumes:
+    - ./envoy-customer-server.json:/etc/envoy-configuration.json
+    - ./init-server.sh:/app/init.sh
+  command: ["/app/init.sh"]
+  environment:
+    TZ: "America/Bogota"
+    LANG: "C.UTF-8"
+    JAVA_OPTS: "-Xms128M -Xmx512m"
+  hostname: customer-plan
   restart: always

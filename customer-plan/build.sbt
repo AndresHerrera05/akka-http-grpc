@@ -35,9 +35,9 @@ dockerfile in docker := {
   val artifactTargetPath = s"/app/${artifact.name}"
 
   new Dockerfile {
-    from("java:8")
+    from("envoy_java:8")
     add(artifact, artifactTargetPath)
-    entryPoint("java", "-jar", artifactTargetPath)
+    runRaw( "mkdir /var/log/envoy" )
   }
 }
 

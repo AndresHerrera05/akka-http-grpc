@@ -1,0 +1,56 @@
+{
+  "listeners": [
+    {
+      "address": "tcp://0.0.0.0:50052",
+      "filters": [
+        {
+          "type": "read",
+          "name": "http_connection_manager",
+          "config": {
+            "codec_type": "http2",
+            "stat_prefix": "Sergio",
+            "route_config": {
+              "virtual_hosts": [{
+                "name": "Sergio2",
+                "domains": ["*"],
+                "routes": [{
+                  "prefix": "/",
+                  "cluster": "customer_service_grpc"
+                }]
+              }]
+            },
+            "filters": [{
+              "type": "decoder",
+              "name": "router",
+              "config": {}
+            }],
+            "access_log": [{
+              "path": "/var/log/envoy/admin_access.log"
+            }]
+          }
+        }
+      ]
+    }
+  ],
+  "admin": {
+    "access_log_path": "/var/log/envoy/admin_access.log",
+    "address": "tcp://0.0.0.0:9902"
+  },
+  "cluster_manager": {
+    "clusters": [
+      {
+        "name": "customer_service_grpc",
+        "connect_timeout_ms": 250,
+        "type": "static",
+        "lb_type": "round_robin",
+        "features": "http2",
+        "hosts": [
+          {
+            "url": "tcp://127.0.0.1:50053"
+          }
+        ]
+      }
+
+    ]
+  }
+}

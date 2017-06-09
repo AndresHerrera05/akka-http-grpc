@@ -1,5 +1,0 @@
-[0m[[0minfo[0m] [0mCompiling 1 protobuf files to /home/seven4n/Documentos/Proyectos/Pruebas/akka-http-grpc/customer/target/scala-2.12/src_managed/main[0m
-[0m[[0mdebug[0m] [0mprotoc options:[0m
-[0m[[0minfo[0m] [0mCompiling schema /home/seven4n/Documentos/Proyectos/Pruebas/akka-http-grpc/customer/src/main/protobuf/customer_plan.proto[0m
-[0m[[0minfo[0m] [0mCompiling protobuf[0m
-[0m[[0minfo[0m] [0mProtoc target directory: /home/seven4n/Documentos/Proyectos/Pruebas/akka-http-grpc/customer/target/scala-2.12/src_managed/main[0m

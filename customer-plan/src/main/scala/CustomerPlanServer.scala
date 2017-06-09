@@ -18,7 +18,7 @@ object CustomerPlanServer {
     server.blockUntilShutdown()
   }
 
-  private val port = 50052
+  private val port = 50053
 }
 
 class CustomerPlanServer(executionContext: ExecutionContext) { self =>

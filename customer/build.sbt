@@ -52,7 +52,6 @@ dockerfile in docker := {
     from("envoy_java:8")
     add(artifact, artifactTargetPath)
     runRaw( "mkdir /var/log/envoy" )
-    entryPoint("java", "-jar", artifactTargetPath)
   }
 }
 
